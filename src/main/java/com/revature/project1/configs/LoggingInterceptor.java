@@ -21,7 +21,7 @@ public class LoggingInterceptor implements HandlerInterceptor {
             throws Exception {
 
         Logger log = LoggerFactory.getLogger(getClass());
-        log.info(System.getenv("HOSTNAME") + "SessionID: " + request.getSession().getId().toString());
+        log.info(System.getenv("HOSTNAME") + " SessionID: " + request.getSession().getId().toString());
         MDC.clear();
     }
 
